@@ -31,9 +31,9 @@
 
 .hero__box {
 
-  width: 480px; /* Применяем 100% ширины */
-  height: 480px; /* Для сохранения пропорций */
-  max-width: 480px;
+  width: 450px; /* Применяем 100% ширины */
+  height: 450px; /* Для сохранения пропорций */
+  max-width: 450px;
   justify-self: center;
   overflow: hidden;
   position: relative;
@@ -510,12 +510,12 @@ footer p {
 
 @media screen and (max-width: 768px) {
   .hero__box {
-    width: 232px; /* Занимает 100% ширины экрана */
-    height: 232px; /* Автоматически подстраивается по высоте */
+    width: 215px; /* Занимает 100% ширины экрана */
+    height: 215px; /* Автоматически подстраивается по высоте */
   }
 
   .hero__box-img {
-    width: 232px;
-    height: 232px;
+    width: 215px;
+    height: 215px;
   }
 }
