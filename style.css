@@ -16,7 +16,7 @@
 
 
 .header {
-  width: 25%;
+  width: 15%;
   padding: 13px 0;
 
 
@@ -30,9 +30,10 @@
 }
 
 .hero__box {
-  width: 414px; /* Задайте желаемую ширину контейнера */
-  height: 418px; /* Задайте желаемую высоту контейнера */
-  max-width: 420px;
+
+  width: 480px; /* Применяем 100% ширины */
+  height: 480px; /* Для сохранения пропорций */
+  max-width: 480px;
   justify-self: center;
   overflow: hidden;
   position: relative;
@@ -44,8 +45,9 @@
 }
 
 .hero__box-img {
-  width: 100%; /* Задайте 100% ширины для изображения */
-  height: 100%; /* Задайте 100% высоты для изображения */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Задайте 100% высоты для изображения */
   position: relative; /* Установите абсолютное позиционирование для изображения */
   top: 0; /* Задайте расстояние от верхней границы контейнера */
   left: 0; /* Задайте расстояние от левой границы контейнера */
@@ -503,5 +505,17 @@ footer p {
 
   to {
     backdrop-filter: hue-rotate(90deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__box {
+    width: 232px; /* Занимает 100% ширины экрана */
+    height: 232px; /* Автоматически подстраивается по высоте */
+  }
+
+  .hero__box-img {
+    width: 232px;
+    height: 232px;
   }
 }
