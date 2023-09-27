@@ -64,7 +64,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: rgb(12, 12, 12);
 }
 
 /* TRANSITION */
@@ -154,10 +154,10 @@ a:hover {
 
 .menu-links a {
   display: block;
-  padding: 10px;
+  padding: px;
   text-align: center;
-  font-size: 1.5rem;
-  color: black;
+  font-size: 1rem;
+  color: rgb(10, 10, 10);
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -167,7 +167,7 @@ a:hover {
 }
 
 .menu-links.open {
-  max-height: 300px;
+  max-height: 250px;
 }
 
 .hamburger-icon.open span:first-child {
