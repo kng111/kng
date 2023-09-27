@@ -154,7 +154,7 @@ a:hover {
 
 .menu-links a {
   display: block;
-  padding: px;
+  padding: 1px;
   text-align: center;
   font-size: 1rem;
   color: rgb(10, 10, 10);
@@ -508,14 +508,14 @@ footer p {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 668px) {
   .hero__box {
-    width: 215px; /* Занимает 100% ширины экрана */
-    height: 215px; /* Автоматически подстраивается по высоте */
+    width: 200px; /* Занимает 100% ширины экрана */
+    height: 200px;/* Автоматически подстраивается по высоте */
   }
 
   .hero__box-img {
-    width: 215px;
-    height: 215px;
+    width: 200px;
+    height: 200px;
   }
 }
