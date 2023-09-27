@@ -7,6 +7,52 @@
   padding: 0;
 }
 
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+
+
+.header {
+  width: 25%;
+  padding: 13px 0;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 25px;
+  font-weight: 50;
+  color: rgba(81, 88, 86, 0.979);
+}
+
+.hero__box {
+  width: 414px; /* Задайте желаемую ширину контейнера */
+  height: 418px; /* Задайте желаемую высоту контейнера */
+  max-width: 420px;
+  justify-self: center;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgb(255, 255, 255);
+
+  background-image: linear-gradient(to right, rgba(190, 10, 231, 0.677) 1%, rgba(139, 150, 226, 0.556) 99%);
+  animation: ava-animate 10s infinite alternate;
+  box-shadow: 2px 5px 10px rgba(240, 30, 30, 0.99);
+}
+
+.hero__box-img {
+  width: 100%; /* Задайте 100% ширины для изображения */
+  height: 100%; /* Задайте 100% высоты для изображения */
+  position: relative; /* Установите абсолютное позиционирование для изображения */
+  top: 0; /* Задайте расстояние от верхней границы контейнера */
+  left: 0; /* Задайте расстояние от левой границы контейнера */
+  animation: ava-bg 6s infinite alternate;
+  
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -429,4 +475,33 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+
+@keyframes ava-animate {
+  0% {
+    border-radius: 62% 38% 72% 28% / 67% 32% 68% 33%;
+  }
+
+  40% {
+    border-radius: 37% 63% 53% 47% / 67% 32% 68% 33%;
+  }
+
+  60% {
+    border-radius: 23% 77% 39% 61% / 78% 54% 46% 22%;
+  }
+
+  100% {
+    border-radius: 18% 82% 24% 76% / 43% 54% 46% 57%;
+  }
+}
+
+@keyframes ava-bg {
+  from {
+    backdrop-filter: hue-rotate(0);
+  }
+
+  to {
+    backdrop-filter: hue-rotate(90deg);
+  }
 }
