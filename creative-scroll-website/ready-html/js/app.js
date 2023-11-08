@@ -39,3 +39,24 @@ if (ScrollTrigger.isTouch !== 1) {
   let itemsR = gsap.utils.toArray('.gallery__right .gallery__item')
   animateItems(itemsR, 50)
 }
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+document.addEventListener('DOMContentLoaded', function() {
+  var galleryItems = document.querySelectorAll('.gallery__item');
+
+  galleryItems.forEach(function(item) {
+    ScrollTrigger.create({
+      trigger: item,
+      start: 'top 80%',
+      onEnter: function() {
+        item.classList.add('active');
+      },
+      onLeaveBack: function() {
+        item.classList.remove('active');
+      }
+    });
+  });
+});
+
