@@ -95,7 +95,7 @@ body {
 	height: auto;
 	opacity: 0; /* Начальная прозрачность изображения */
 	transform: translateX(-50%); /* Начальная позиция -50% от ширины */
-	transition: opacity 0.5s, transform 0.5s; /* Плавное переходное свойство */
+	transition: opacity 1.5s, transform 1.5s; /* Плавное переходное свойство */
   }
   
   .gallery__item.active img {
